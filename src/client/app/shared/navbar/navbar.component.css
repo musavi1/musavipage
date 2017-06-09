@@ -1,0 +1,36 @@
+:host {
+  border: 2px solid #b4ddb4;
+  background: #104a24;
+  border-bottom-width: 1px;
+  display: block;
+  height: 48px;
+  padding: 0 16px;
+}
+
+nav a {
+  color: #b4ddb4;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-right: 20px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+nav a.router-link-active {
+  color: #00ff00;
+}
+
+nav a:hover{
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48px;
+  margin-right: 20px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+
+
+}

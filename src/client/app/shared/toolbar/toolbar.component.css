@@ -1,0 +1,54 @@
+:host {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  height: 48px;
+  padding: 0 16px;
+}
+
+h1 {
+  display: inline;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+  line-height: 48px;
+}
+
+.more {
+  background: url("./assets/svg/more.svg");
+  float: right;
+  height: 24px;
+  margin-top: 12px;
+  width: 24px;
+}
+.roundImage{
+  margin-left: 40px;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  -webkit-transition: all 2s ease-in-out; ;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+img.roundImage:hover{
+  position: absolute;
+  margin-left: 40px;
+  border-radius: 50px;
+  width: 75px;
+  height: 75px;
+  -webkit-transition: all 2s ease-in-out; ;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+
+}
+.nameCenter{
+  position: absolute;
+  display: block;
+  margin-top: 10px ;
+  margin-left: 120px;
+
+}
