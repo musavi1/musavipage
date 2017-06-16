@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import { NameListService } from '../shared/name-list/name-list.service';
 
 /**
@@ -9,6 +9,9 @@ import { NameListService } from '../shared/name-list/name-list.service';
   selector: 'sd-home',
   templateUrl: 'home.component.html',
   styleUrls: ['home.component.css'],
+  inputs: ['navIsFixed'],
+  outputs: [],
+
 })
 export class HomeComponent implements OnInit {
 

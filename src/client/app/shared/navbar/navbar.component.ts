@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, Inject, OnInit, Output } from "@angular/core";
+import { DOCUMENT } from '@angular/platform-browser';
 
 /**
  * This class represents the navigation bar component.
@@ -8,5 +9,26 @@ import { Component } from '@angular/core';
   selector: 'sd-navbar',
   templateUrl: 'navbar.component.html',
   styleUrls: ['navbar.component.css'],
+  outputs: ['navIsFixed'],
 })
-export class NavbarComponent { }
+export class NavbarComponent implements OnInit{
+  public navIsFixed: boolean = false;
+
+  constructor(@Inject(DOCUMENT) private document: Document) { }
+
+  ngOnInit() { }
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    let number = this.document.body.scrollTop;
+    console.log(number);
+    if (number > 48) {
+      this.navIsFixed = true;
+    } else if (this.navIsFixed && number < 48) {
+      this.navIsFixed = false;
+    }
+  }
+
+
+}
+

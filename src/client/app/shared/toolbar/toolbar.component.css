@@ -1,27 +1,39 @@
 :host {
-  background-color: #000000;
+  background: #000000;
   color: rgba(255, 255, 255, 0.5);
   display: block;
   height: 48px;
-  padding: 0 16px;
+  padding: 0 0;
 }
 
 h1 {
-  display: inline;
+  display: block;
   font-size: 20px;
   font-weight: normal;
   letter-spacing: 0.1px;
   line-height: 48px;
+  margin-left: 200px;
 }
 
+.position-fix{
+  position:fixed;
+  background: rgba(0,0,0,.6);
+  width: 100%;
+  z-index: -5;
+}
 .more {
+  display: block;
   background: url("./assets/svg/more.svg");
   float: right;
   height: 24px;
   margin-top: 12px;
+  margin-bottom: 12px;
   width: 24px;
+  margin-left: 400px;
 }
-.roundImage{
+.round-image{
+  margin-left: 100px;
+  display:block;
   margin-left: 40px;
   border-radius: 50px;
   width: 55px;
@@ -33,7 +45,7 @@ h1 {
   transition: all 2s ease-in-out;
 }
 
-img.roundImage:hover{
+img.round-image:hover{
   position: absolute;
   margin-left: 40px;
   border-radius: 50px;
@@ -45,7 +57,7 @@ img.roundImage:hover{
   transition: all 2s ease-in-out;
 
 }
-.nameCenter{
+.name-center{
   position: absolute;
   display: block;
   margin-top: 10px ;
