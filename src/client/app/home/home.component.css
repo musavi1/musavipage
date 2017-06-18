@@ -14,18 +14,36 @@ ul {
 .main{
   display: flex;
   margin-top: 0px;
+}
+
+.skills-main{
+  z-index: 3;
+  flex: 100%;
+}
+
+.education-main{
   z-index: -3;
 }
 
-.education-class-text{
-  color: #000000;
+.class-text-center{
   text-align: center;
   flex: 100%;
   width: 100%;
   font-weight: 600;
   font-size: 32px;
+}
+
+.education-class-text{
+  color: #000000;
   background: rgba(0,0,0,0.5);
   border: solid #000000 1px;
+}
+
+.skill-class-text{
+  color: #ffffff ;
+  background: rgba(0,0,0,0.5);
+  border: solid #000000 1px;
+
 }
 
 .education-class{
@@ -36,6 +54,58 @@ ul {
   background: rgba(0,0,0,0.5);
   max-height: 16em;
   max-width: 16em;
+}
+
+.skills-class{
+  color: white;
+  border-radius: 2%;
+  align-self: center;
+  padding: 1em;
+  background: #febc11;
+  margin: 1em;
+  border: solid 1px #ffffff;
+
+}
+
+.skills-class h2{
+  background: rgba(0,0,0,.9);
+  padding:10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: solid 1px rgba(255,255,255,.5);
+  border-radius: 2%;
+
+
+}
+
+.skills-class span {
+  padding: 1em;
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 2%;
+
+
+}
+
+.border-span{
+  border: solid 1px rgba(0,0,0,.5);
+  padding: 1em;
+
+
+}
+
+.skills-class:hover{
+
+}
+
+.skill-body{
+
 }
 
 .education-class:hover{
@@ -73,18 +143,41 @@ ul {
   opacity: 1;
 }
 
+
 .trans-background-expertise{
-  background: url("src/client/assets/images/graduationCeremony.jpeg") fixed repeat;
+  background: url("src/client/assets/images/zeros.png") fixed no-repeat;
   background-position: center 0;
-  background-color: rgba(0,0,0,.2);
-  z-index:-1;
-  opacity: 1;
+  z-index:-101;
+  opacity: .2;
 }
 
-.affix-top {
-  padding-top: 200px;
-  background-color: #945849;
+.background-vid{
+  position: fixed;
+  flex: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
+.background-video{
+  flex: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+
  .ten{
    flex: 10%;
  }
@@ -121,6 +214,10 @@ ul {
    flex: 90%;
  }
 
+ .hundred{
+   flex: 100;
+ }
+
 .dividerHor{
   width:10px;
   height:auto;
@@ -130,4 +227,56 @@ ul {
   width:auto;
   height:10px;
   display:inline-block;
+}
+
+.box h3{
+  text-align:center;
+  position:relative;
+  top:80px;
+}
+.box {
+  width:70%;
+  height:200px;
+  background:#FFF;
+  margin:40px auto;
+}
+
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+.shadow-4{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
 }

@@ -1,11 +1,57 @@
 
+  <div class="background-video">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="background-vid">
+      <source src="src/client/assets/images/cyberbg.webm" type="video/webm">
+    </video>
+  </div>
+  <div>
+    <div class=" main skills-main">
+      <h1 class="skill-class-text class-text-center education-class-text"> AREA OF EXPERTISE</h1>
+    </div>
+    <div class="main">
+      <div class="skills-class ">
+        <h2>
+          Software Engineer
+        </h2>
+        <div class="border-span ">
+          <span>
+            Worked as a Software Engineer for Georgia Department of Human Services, AT&T and Accenture. Experienced with Java, C# and Ruby.
+          </span>
+        </div>
+      </div>
+      <div class="skills-class ">
+        <h2>
+          Software Engineer
+        </h2>
+        <div class="border-span">
+          <span>
+            Worked as a Software Engineer for Georgia Department of Human Services, AT&T and Accenture. Experienced with Java, C# and Ruby.
+          </span>
+        </div>
+      </div>
+      <div class="skills-class ">
+        <h2>
+          Software Engineer
+        </h2>
+        <div class="border-span">
+          <span>
+            Worked as a Software Engineer for Georgia Department of Human Services, AT&T and Accenture. Experienced with Java, C# and Ruby.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
 <div >
 <div class="trans-background">
-  <div class="main">
-    <h1 class="education-class-text"> EDUCATION</h1>
+  <div class="main education-main">
+    <h1 class="class-text-center education-class-text"> EDUCATION</h1>
   </div>
-  <div class="main">
+  <div class="main education-main">
     <div class="dividerHor"></div>
     <div class="ten">
       <img class="education-class" src="src/client/assets/images/gatechLogoSq.jpg" alt="GATech Pic">
@@ -34,28 +80,24 @@
     </div>
     <div class="dividerHor"></div>
   </div>
-  <div class="dividerVer">
-  </div>
-</div>
-
-
-<div class="trans-background-expertise ">
-  <div class="main">
-    <hr>
-    <h1 class="education-class-text"> AREA OF EXPERTISE</h1>
-  </div>
 </div>
 
 
 
-<p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
 
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
-</form>
 
-<ul>
-  <li *ngFor="let name of names">{{name}}</li>
-</ul>
+<div class="trans-background">
+  <p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
+
+  <form (submit)="addName()">
+    <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
+    <button type="submit">Add</button>
+  </form>
+
+  <ul>
+    <li *ngFor="let name of names">{{name}}</li>
+  </ul>
 </div>
+
+</div>
+
