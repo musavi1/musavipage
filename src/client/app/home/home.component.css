@@ -1,5 +1,7 @@
 :host {
   display: block;
+  background: rgba(0,0,0,.9);
+  z-index: -105;
 }
 
 input {
@@ -44,6 +46,7 @@ ul {
   background: rgba(0,0,0,0.5);
   border: solid #000000 1px;
 
+
 }
 
 .education-class{
@@ -54,9 +57,11 @@ ul {
   background: rgba(0,0,0,0.5);
   max-height: 16em;
   max-width: 16em;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .skills-class{
+  flex: 30%;
   color: white;
   border-radius: 2%;
   align-self: center;
@@ -64,6 +69,7 @@ ul {
   background: #febc11;
   margin: 1em;
   border: solid 1px #ffffff;
+  min-height: 23em;
 
 }
 
@@ -73,8 +79,9 @@ ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: solid 1px rgba(255,255,255,.5);
+  border: solid 1px rgba(255,255,255,1);
   border-radius: 2%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
 
 
 }
@@ -91,11 +98,13 @@ ul {
   border-radius: 2%;
 
 
+
 }
 
 .border-span{
-  border: solid 1px rgba(0,0,0,.5);
+  border: solid 1px rgba(255,255,255,.5);
   padding: 1em;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
 
 
 }
@@ -115,6 +124,7 @@ ul {
   padding: 0;
   transform: translate( 0% ) rotate( 360deg );
   transition: transform 2s ease;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .education-body-class{
@@ -124,7 +134,7 @@ ul {
   font-size: 16px;
   border: solid #febc11;
   padding-left: 2em;
-
+  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .education-body-class:hover{
@@ -141,6 +151,7 @@ ul {
   background-color: rgba(0,0,0,.2);
   z-index: -1;
   opacity: 1;
+  min-height: 20em;
 }
 
 
@@ -219,13 +230,13 @@ ul {
  }
 
 .dividerHor{
-  width:10px;
+  width:1em;
   height:auto;
   display:inline-block;
 }
 .dividerVer{
   width:auto;
-  height:10px;
+  height: 1em;
   display:inline-block;
 }
 
