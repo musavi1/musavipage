@@ -4,7 +4,8 @@
 
 
 }
-.nav2{
+
+nav2{
   height: 60px;
   padding-left: 50px;
   box-shadow: 1px 2px 3px rgba(0,0,0,.4);
@@ -12,20 +13,10 @@
   background: #febc11;
   border-bottom-width: 1px;
   display: block;
-  margin-top: 48px;
+  margin-top: -60px;
   -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
   transition:  2s;
-}
-
-.nav2 a {
-  color: #282828;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 60px;
-  margin-right: 20px;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
+  position:fixed;
 
 }
 
@@ -37,8 +28,7 @@ nav{
   background: #febc11;
   border-bottom-width: 1px;
   display: block;
-  margin-top: -60px;
-
+  margin-top: 48px;
 }
 
 nav a {
@@ -50,11 +40,6 @@ nav a {
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-
-}
-
-.nav2 a.router-link-active {
-  color: #ffe66d;
 }
 
 nav a.router-link-active {
@@ -70,8 +55,6 @@ nav a:hover{
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-
-
 }
 
 .affix-top {
@@ -85,7 +68,6 @@ nav a:hover{
   display: block;
   height: 60px;
   top: 0px;
-  position:fixed;
   color: #282828;
   font-size: 16px;
   font-weight: 700;
@@ -96,7 +78,7 @@ nav a:hover{
   z-index: 20;
   width: 100%;
   margin-top: 0px;
-  -webkit-transition: .4s; /* For Safari 3.1 to 6.0 */
-  transition:  .4s;
+  position: fixed;
+
 
 }

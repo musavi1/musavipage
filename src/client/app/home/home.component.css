@@ -1,6 +1,6 @@
 :host {
-  display: block;
-  background: rgba(0,0,0,.9);
+  display: flex;
+  background: rgba(0,0,0,.1);
   z-index: -105;
 }
 
@@ -62,7 +62,7 @@ ul {
   background: rgba(0,0,0,0.5);
   max-height: 16em;
   max-width: 16em;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 19px 19px 38px rgba(0,0,0,0.90), 15px 15px 12px rgba(0,0,0,0.22);
 }
 
 .skills-class{
@@ -130,6 +130,10 @@ ul {
 
 }
 
+.affix{
+  padding-top: 100px;
+}
+
 .education-class:hover{
   display: block;
   border-radius: 50%;
@@ -137,7 +141,7 @@ ul {
   align-self: center;
   transform: translate( 0% ) rotate( 360deg );
   transition: transform 2s ease;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 9px 9px 38px rgba(0,0,0,0.90), 5px 5px 12px rgba(0,0,0,0.22);
 }
 
 .education-body-class{
@@ -177,6 +181,7 @@ ul {
 }
 
 .background-vid{
+  display: block;
   position: fixed;
   flex: 100%;
   top: 0;
@@ -188,6 +193,7 @@ ul {
   width: 100%;
   height: 100%;
   opacity: 1;
+
 }
 .background-video{
   flex: 100%;
@@ -196,10 +202,13 @@ ul {
   left: 0;
   z-index: -99;
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   background: black;
+}
+
+.video{
+  display: block;
 }
 
 

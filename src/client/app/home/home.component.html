@@ -1,4 +1,6 @@
 
+<div [class.affix]="navIsFixedHome">
+
   <div class="background-video">
     <video loop muted autoplay poster="img/videoframe.jpg" class="background-vid">
       <source src="src/client/assets/images/cyberbg.webm" type="video/webm">
@@ -42,62 +44,121 @@ Enterprise Information Security and Assurance professional with over two years o
       </div>
     </div>
   </div>
-
   <div >
-  <div class="trans-background">
-    <div class="main education-main">
-      <h1 class="class-text-center education-class-text zero-top-margin"> EDUCATION</h1>
-    </div>
-    <div class="main education-main">
-      <div class="dividerHor"></div>
-      <div class="ten">
-        <img class="education-class" src="src/client/assets/images/gatechLogoSq.jpg" alt="GATech Pic">
+    <div class="trans-background">
+      <div class="main education-main">
+        <h1 class="class-text-center education-class-text zero-top-margin"> EDUCATION</h1>
       </div>
-      <div class="dividerHor">
-      </div>
-      <div class="fifty">
+      <div class="main education-main">
+        <div class="dividerHor"></div>
+        <div class="ten">
+          <img class="education-class" src="src/client/assets/images/gatechLogoSq.jpg" alt="GATech Pic">
+        </div>
+        <div class="dividerHor">
+        </div>
+        <div class="fifty">
 
-        <div class=" education-body-class">
-          <ul>
-            <li><h2> Georgia Institute of Technology, Atlanta, GA </h2></li>
-            <li><h4>Master of Science, Computer Science</h4></li>
-          </ul>
+          <div class=" education-body-class">
+            <ul>
+              <li><h2> Georgia Institute of Technology, Atlanta, GA </h2></li>
+              <li><h4>Master of Science, Computer Science</h4></li>
+            </ul>
+          </div>
+          <div class="dividerVer"></div>
+          <div class=" education-body-class">
+            <ul>
+              <h2> Kennesaw State University, Kennesaw, GA  </h2>
+              <h4>Bachelor of Business, Information Security and Assurance</h4>
+            </ul>
+          </div>
         </div>
-        <div class="dividerVer"></div>
-        <div class=" education-body-class">
-          <ul>
-            <h2> Kennesaw State University, Kennesaw, GA  </h2>
-            <h4>Bachelor of Business, Information Security and Assurance</h4>
-          </ul>
+        <div class="dividerHor"></div>
+        <div class="ten">
+          <img class="education-class" src="src/client/assets/images/ksuLogoSq.jpg" alt="GATech Pic">
         </div>
       </div>
-      <div class="dividerHor"></div>
-      <div class="ten">
-        <img class="education-class" src="src/client/assets/images/ksuLogoSq.jpg" alt="GATech Pic">
-      </div>
+      <div class="dividerVer"></div>
+      <div class="dividerVer"></div>
+      <div class="dividerVer"></div>
+      <div class="dividerVer"></div>
     </div>
-    <div class="dividerVer"></div>
-    <div class="dividerVer"></div>
-    <div class="dividerVer"></div>
-    <div class="dividerVer"></div>
+
+
+
+
+
+    <!--<div class="trans-background">
+      <p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
+
+      <form (submit)="addName()">
+        <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
+        <button type="submit">Add</button>
+      </form>
+
+      <ul>
+        <li *ngFor="let name of names">{{name}}</li>
+      </ul>
+    </div>-->
+
   </div>
 
+  <div >
+    <div class="trans-background">
+      <div class="main education-main">
+        <h1 class="class-text-center education-class-text zero-top-margin"> EDUCATION</h1>
+      </div>
+      <div class="main education-main">
+        <div class="dividerHor"></div>
+        <div class="ten">
+          <img class="education-class" src="src/client/assets/images/gatechLogoSq.jpg" alt="GATech Pic">
+        </div>
+        <div class="dividerHor">
+        </div>
+        <div class="fifty">
+
+          <div class=" education-body-class">
+            <ul>
+              <li><h2> Georgia Institute of Technology, Atlanta, GA </h2></li>
+              <li><h4>Master of Science, Computer Science</h4></li>
+            </ul>
+          </div>
+          <div class="dividerVer"></div>
+          <div class=" education-body-class">
+            <ul>
+              <h2> Kennesaw State University, Kennesaw, GA  </h2>
+              <h4>Bachelor of Business, Information Security and Assurance</h4>
+            </ul>
+          </div>
+        </div>
+        <div class="dividerHor"></div>
+        <div class="ten">
+          <img class="education-class" src="src/client/assets/images/ksuLogoSq.jpg" alt="GATech Pic">
+        </div>
+      </div>
+      <div class="dividerVer"></div>
+      <div class="dividerVer"></div>
+      <div class="dividerVer"></div>
+      <div class="dividerVer"></div>
+    </div>
 
 
 
 
-  <!--<div class="trans-background">
-    <p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
 
-    <form (submit)="addName()">
-      <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-      <button type="submit">Add</button>
-    </form>
+    <!--<div class="trans-background">
+      <p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
 
-    <ul>
-      <li *ngFor="let name of names">{{name}}</li>
-    </ul>
-  </div>-->
+      <form (submit)="addName()">
+        <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
+        <button type="submit">Add</button>
+      </form>
 
+      <ul>
+        <li *ngFor="let name of names">{{name}}</li>
+      </ul>
+    </div>-->
+
+  </div>
 </div>
+
 

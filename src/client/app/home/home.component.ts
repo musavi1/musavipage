@@ -1,6 +1,6 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, HostListener, Inject} from '@angular/core';
 import { NameListService } from '../shared/name-list/name-list.service';
-
+import { DOCUMENT } from '@angular/platform-browser';
 /**
  * This class represents the lazy loaded HomeComponent.
  */
@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
    *
    * @param {NameListService} nameListService - The injected NameListService.
    */
-  constructor(public nameListService: NameListService) {}
+  constructor(@Inject(DOCUMENT) private document: Document, public nameListService: NameListService) {}
 
   /**
    * Get the names OnInit
@@ -54,6 +54,19 @@ export class HomeComponent implements OnInit {
     this.names.push(this.newName);
     this.newName = '';
     return false;
+  }
+
+  public navIsFixedHome: boolean = false;
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    let number = this.document.body.scrollTop;
+    console.log(number);
+    if (number > 48) {
+      this.navIsFixedHome = true;
+    } else if (this.navIsFixedHome && number < 48) {
+      this.navIsFixedHome = false;
+    }
   }
 
 }
