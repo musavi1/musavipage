@@ -108,8 +108,14 @@ ul {
 }
 
 .volunteer-background{
-  background: url("./src/client/assets/images/bgYelloBlack1.png") fixed no-repeat ;
+  /*background: url("assets/images/r-d-black.png") fixed no-repeat ;*/
+  background: url("assets/images/left-blank.png") fixed no-repeat ;
   background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: rgb(254, 188, 17);
   width: 100%;
   height: 36em;
   min-height: 34em;
@@ -184,7 +190,8 @@ ul {
 to prevent jumping in page scrolling. */
 
 .affix{
-  padding-top: 100px;
+  padding-top: 243px;
+  z-index: -4;
 }
 
 .education-class:hover{
@@ -203,21 +210,21 @@ to prevent jumping in page scrolling. */
   color: #ffffff;
   font-weight: 600;
   font-size: 16px;
-  border: solid #febc11;
+  border: solid rgba(254, 188, 17, 1);
   padding-left: 2em;
   box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .education-body-class:hover{
   background: rgba(0,0,0,.8);;
-  color: #ffe66d;
+  color: rgba(255,230,109,1);
   font-weight: 600;
   font-size: 16px;
   border: solid #febc11;
   padding-left: 2em;
 }
 .trans-background{
-  background: url("./src/client/assets/images/gradHat2.jpeg") fixed repeat;
+  background: url("assets/images/gradHat2.jpeg") fixed repeat;
   background-position: center center;
   background-color: rgba(0,0,0,.2);
   z-index: -1;
@@ -229,7 +236,7 @@ to prevent jumping in page scrolling. */
 
 
 .trans-background-expertise{
-  background: url("./src/client/assets/images/zeros.png") fixed no-repeat;
+  background: url("assets/images/zeros.png") fixed no-repeat;
   background-position: center 0;
   z-index:-101;
   opacity: .2;
@@ -255,7 +262,6 @@ to prevent jumping in page scrolling. */
 .background-video{
   flex: 100%;
   position: absolute;
-  top: 0;
   left: 0;
   z-index: -99;
   width: 100%;
@@ -265,7 +271,6 @@ to prevent jumping in page scrolling. */
 
 .video{
   display: flex;
-
 }
 
 
@@ -380,8 +385,8 @@ to prevent jumping in page scrolling. */
 #f1_container {
   position: relative;
   margin: 10px auto;
-  height: 20em;
-  width: 30em;
+  height: 400px;
+  width: 550px;
   z-index: 1;
 }
 
@@ -398,8 +403,8 @@ to prevent jumping in page scrolling. */
 #f2_container {
   position: relative;
   margin: 10px auto;
-  height: 25em;
-  width: 30em;
+  height: 400px;
+  width: 550px;
   z-index: 1;
 }
 
@@ -427,10 +432,10 @@ to prevent jumping in page scrolling. */
   display: flex;
   transform: rotateY(180deg);
   box-sizing: border-box;
-  padding: 10px;
+  padding: 0px;
   color: white;
   text-align: center;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,1);
 
 }
 
@@ -449,10 +454,18 @@ to prevent jumping in page scrolling. */
   margin-right: auto;
   align-self: center;
   align-items: center;
-  align-content: center;
-  height: 20em;
-  width: 30em;
-  border: 20px rgba(242,216,29,.8) solid
+  align-content: left;
+  font-weight: 700;
+  font-size: 26px;
+  height: 400px;
+  width: 550px;
+  border: 10px rgba(254, 188, 17, 0.8) double;
+
+}
+
+.padding-box{
+  padding: 25px;
+  text-align: left;
 
 }
 
@@ -460,8 +473,12 @@ to prevent jumping in page scrolling. */
   display: flex;
   position: relative;
   width: 100%;
-  background: url("./src/client/assets/images/bgTriangleBlack180.png") fixed no-repeat ;
+  background: url("assets/images/right-blank.png") fixed no-repeat ;
   background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100%;
   height: 36em;
   min-height: 39em;
@@ -587,22 +604,22 @@ ul#menu li:after {
   content: "";
   width: 200px;
   height: 20px;
-  background: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.4);
   position: absolute;
   bottom: -20px;
   left: 0;
   -webkit-mask-image: -webkit-gradient(linear, left 10%, left bottom, from(rgba(0,0,0,.5)), to(rgba(0,0,0,0)));
 }
 
-ul#menu li:nth-child(1) { background-image: url('./src/client/assets/images/gradCeremonyBWLight.jpg'); }
+ul#menu li:nth-child(1) { background-image: url('assets/images/gradCeremonyBWLight.jpg'); }
 
-ul#menu li:nth-child(2) { background-image: url('./src/client/assets/images/gradCeremonyBWLight.jpg'); }
+ul#menu li:nth-child(2) { background-image: url('assets/images/gradCeremonyBWLight.jpg'); }
 
-ul#menu li:nth-child(3) { background-image: url('./src/client/assets/images/gradCeremonyBWLight.jpg'); }
+ul#menu li:nth-child(3) { background-image: url('assets/images/gradCeremonyBWLight.jpg'); }
 
-ul#menu li:nth-child(4) { background-image: url('./src/client/assets/images/gradCeremonyBWLight.jpg'); }
+ul#menu li:nth-child(4) { background-image: url('assets/images/gradCeremonyBWLight.jpg'); }
 
-ul#menu li:nth-child(5) { background-image: url('./src/client/assets/images/gradCeremonyBWLight.jpg'); }
+ul#menu li:nth-child(5) { background-image: url('assets/images/gradCeremonyBWLight.jpg'); }
 
-ul#menu li:nth-child(6) { background-image: url('./src/client/assets/images/gradCeremonyBWLight.jpg'); }
+ul#menu li:nth-child(6) { background-image: url('assets/images/gradCeremonyBWLight.jpg'); }
 

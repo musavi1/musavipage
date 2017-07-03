@@ -62,9 +62,9 @@ export class HomeComponent implements OnInit {
   onWindowScroll() {
     let number = this.document.body.scrollTop;
     console.log(number);
-    if (number > 48) {
+    if (number > 180) {
       this.navIsFixedHome = true;
-    } else if (this.navIsFixedHome && number < 48) {
+    } else if (this.navIsFixedHome && number < 180) {
       this.navIsFixedHome = false;
     }
   }

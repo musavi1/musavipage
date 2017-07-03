@@ -22,9 +22,9 @@ export class NavbarComponent implements OnInit{
   onWindowScroll() {
     let number = this.document.body.scrollTop;
     console.log(number);
-    if (number > 48) {
+    if (number > 180) {
       this.navIsFixed = true;
-    } else if (this.navIsFixed && number < 48) {
+    } else if (this.navIsFixed && number < 180) {
       this.navIsFixed = false;
     }
   }

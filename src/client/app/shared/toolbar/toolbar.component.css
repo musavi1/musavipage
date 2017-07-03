@@ -1,8 +1,8 @@
 :host {
   background: #000000;
   color: rgba(255, 255, 255, 0.7);
-  height: 48px;
-  padding: 0 0;
+  height: 180px;
+  padding: 0px 0px;
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
   font-size: 20px;
   font-weight: normal;
   letter-spacing: 0.1px;
-  line-height: 48px;
+  line-height: 180px;
   margin-left: 200px;
 }
 
@@ -19,6 +19,7 @@ h1 {
   background: rgba(0,0,0,.9);
   width: 100%;
   z-index: -5;
+  height: 180px;
 }
 .more {
   display: block;
@@ -33,11 +34,10 @@ h1 {
 .round-image{
   margin-left: 100px;
   display:block;
-  margin-left: 40px;
+  margin-left: 45% ;
   border-radius: 50px;
-  width: 55px;
-  height: 55px;
-  position: absolute;
+  height: 155px;
+  position: fixed;
   -webkit-transition: all 2s ease-in-out; ;
   -moz-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
@@ -46,7 +46,7 @@ h1 {
 
 img.round-image:hover{
   position: absolute;
-  margin-left: 40px;
+  margin-left: 45%;
   border-radius: 50px;
   width: 75px;
   height: 75px;
@@ -55,11 +55,12 @@ img.round-image:hover{
   -o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 
+
 }
 .name-center{
-  position: absolute;
+  position: relative;
   display: block;
-  margin-top: 10px ;
-  margin-left: 120px;
+  margin-top: 135px ;
+  margin-left: 43%;
 
 }

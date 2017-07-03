@@ -28,7 +28,7 @@ nav{
   background: #febc11;
   border-bottom-width: 1px;
   display: block;
-  margin-top: 48px;
+  margin-top: 180px;
 }
 
 nav a {
@@ -79,7 +79,7 @@ nav a:hover{
   width: 100%;
   margin-top: 0px;
   position: fixed;
-  box-shadow: 9px 9px 38px rgba(0,0,0,0.90), 5px 5px 12px rgba(0,0,0,0.22);
+  box-shadow: 9px 9px 38px rgba(255,255,255,0.90), 5px 5px 12px rgba(255,255,255,0.22);
 
 
 }
