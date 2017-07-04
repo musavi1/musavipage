@@ -191,7 +191,7 @@ to prevent jumping in page scrolling. */
 
 .affix{
   padding-top: 243px;
-  z-index: -4;
+  z-index: 0;
 }
 
 .education-class:hover{

@@ -1,11 +1,13 @@
 :host{
-  z-index: 200;
+  z-index: 1 !important;
 }
 .background-footer{
   background: rgba(0,0,0,.9);
   min-height: 4em;
   border-top: inset rgba(255,255,255,0.6) 5px;
   border-bottom: inset rgba(255,255,255,0.6) 5px;
+  z-index: 1 !important;
+
 }
 
 .footer-text{
@@ -16,5 +18,11 @@
   padding: 1em;
   color: rgba(255,255,255,1);
   text-shadow: 5px 3px 27px rgba(255, 255, 255, 1);
+  z-index: 1 !important;
 
 }
+ #bgf{
+   z-index: 2;
+   position:relative;
+
+ }
