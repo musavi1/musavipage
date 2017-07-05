@@ -1,0 +1,456 @@
+:host {
+
+}
+
+input {
+  width: 250px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 0 0 8px;
+}
+
+/*<>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.main{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0px;
+}
+
+.class-text-center{
+  text-align: center;
+  -webkit-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+  width: 100%;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 3em;
+
+}
+
+.border-span{
+  border: solid 1px rgba(255,255,255,.5);
+  padding: 1em;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
+  min-height: 20em;
+  max-height: 20em;
+  overflow: scroll;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+
+}
+
+.skills-main{
+  z-index: 3;
+  -webkit-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+}
+
+.skills-class{
+  -webkit-flex: 30%;
+  -ms-flex: 30%;
+  flex: 30%;
+  color: white;
+  border-radius: 2%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 1em;
+  background: #febc11;
+  margin: 1em;
+  border: solid 1px #ffffff;
+  min-height: 25em;
+  max-height: 25em;
+
+}
+
+.skill-class-text{
+  color: #ffffff ;
+  margin-top: 0px;
+  background: rgba(0,0,0,1);
+  border-top: solid #ffffff 5px;
+  border-bottom: 0px;
+  min-height: 3em;
+  box-shadow: 0 9px 38px rgba(255,255,255,0.30), 0 15px 12px rgba(255,255,255,0.12);
+
+}
+
+.skills-class h2{
+  background: rgba(0,0,0,.9);
+  padding:10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: solid 1px rgba(255,255,255,1);
+  border-radius: 2%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
+  margin-top: -40px;
+
+
+}
+
+.skills-class span {
+  padding: 1em;
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 2%;
+  overflow: scroll;
+
+
+
+
+}
+
+
+
+.skills-class:hover{
+
+}
+
+.skill-body{
+
+}
+
+/*This padding adds when the navbar would change to fix
+to prevent jumping in page scrolling. */
+
+.affix{
+  padding-top: 243px;
+  z-index: 0;
+}
+
+
+
+
+.ten{
+  -webkit-flex: 10%;
+  -ms-flex: 10%;
+  flex: 10%;
+}
+
+.twenty{
+  -webkit-flex: 20%;
+  -ms-flex: 20%;
+  flex: 20%;
+}
+
+.thirty{
+  -webkit-flex: 30%;
+  -ms-flex: 30%;
+  flex: 30%;
+}
+
+.forty{
+  -webkit-flex: 40%;
+  -ms-flex: 40%;
+  flex: 40%;
+}
+
+.fifty{
+  -webkit-flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
+
+}
+
+.sixty{
+  -webkit-flex: 60%;
+  -ms-flex: 60%;
+  flex: 60%;
+}
+
+.seventy{
+  -webkit-flex: 70%;
+  -ms-flex: 70%;
+  flex: 70%;
+}
+
+.eighty{
+  -webkit-flex: 80%;
+  -ms-flex: 80%;
+  flex: 80%;
+}
+
+.ninety{
+  -webkit-flex: 90%;
+  -ms-flex: 90%;
+  flex: 90%;
+}
+
+.hundred{
+  -webkit-flex: 100;
+  -ms-flex: 100;
+  flex: 100;
+}
+
+.dividerHor{
+  width:1em;
+  height:auto;
+  display:-webkit-inline-flex;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+}
+.dividerVer{
+  width:auto;
+  height: 1em;
+  display:-webkit-inline-flex;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+}
+
+.box h3{
+  text-align:center;
+  position:relative;
+  top:80px;
+}
+.box {
+  width:70%;
+  height:200px;
+  background:#FFF;
+  margin:40px auto;
+}
+
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+.shadow-4{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+/*3D card flip */
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  height: 400px;
+  width: 550px;
+  z-index: 1;
+}
+
+#f1_card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+#f2_container {
+  position: relative;
+  margin: 10px auto;
+  height: 400px;
+  width: 550px;
+  z-index: 1;
+}
+
+#f2_card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f2_container:hover #f2_card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front{
+  width: 100%;
+  height: 100%;
+}
+.face.back {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 0px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0,0,0,1);
+
+}
+
+/*////*/
+
+
+
+.slides-main{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  background: url("assets/images/right-blank.png") fixed no-repeat ;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 36em;
+  min-height: 39em;
+
+
+}
+
+/*Start CSS for slide view multiple pic*/
+ul#menu {
+  padding: 0;
+  margin: 0;
+  -webkit-perspective: 780px;
+  perspective: 780px;
+
+}
+
+ul#menu li a {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+ul#menu li {
+  text-indent: -9999px;
+  position: relative;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 300px;
+  height: 259px;
+  margin-right: -70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 50;
+  -webkit-transform: rotateY(45deg);
+  transform: rotateY(45deg);
+  transition: all .45s;
+  opacity: .8;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 0 30px rgba(0,0,0,0.2);
+}
+
+ul#menu li:last-child{
+  z-index: 45;
+  -webkit-transform: rotateY(-45deg);
+  transform: rotateY(-45deg);
+}
+ul#menu li:first-child {
+  z-index: 45;
+  -webkit-transform: rotateY(45deg);
+  transform: rotateY(45deg);
+}
+
+ul#menu li:nth-child(2){
+  z-index: 46;
+  -webkit-transform: rotateY(45deg);
+  transform: rotateY(45deg);
+}
+ul#menu li:nth-child(4) {
+  z-index: 46;
+  -webkit-transform: rotateY(-45deg);
+  transform: rotateY(-45deg);
+}
+
+ul#menu li:nth-child(3) {
+  z-index: 51;
+  -webkit-transform: rotateY(0deg) scale(1.2);
+  transform: rotateY(0deg) scale(1.2);
+  z-index: 55!important;
+}
+
+ul#menu li.highlighted {
+  -webkit-transform: rotateY(0deg) scale(1.2);
+  transform: rotateY(0deg) scale(1.2);
+  z-index: 55!important;
+}
+
+ul#menu .highlighted ~ li {
+
+}
+ul#menu li:hover,
+ul#menu li:first-child:hover,
+ul#menu li.highlighted ~ li:hover { z-index: 60!important; }
+
+ul#menu li:hover {
+  -webkit-transform: rotateY(0deg) scale(1.5);
+  transform: rotateY(0deg) scale(1.5);
+  opacity: 1;
+}
+
+ul#menu li:hover ~ li {
+  -webkit-transform: rotateY(-45deg);
+  transform: rotateY(-45deg);
+}
+
+ul#menu:hover li:not(:hover) {
+  -webkit-transform: rotateY(45deg);
+  transform: rotateY(45deg);
+}
+
+ul#menu:hover li:hover ~ li {
+  -webkit-transform: rotateY(-45deg);
+  transform: rotateY(-45deg);
+}
+
+ul#menu:not(:hover) li.highlighted { opacity: 1; }
+
+ul#menu li:after {
+  content: "";
+  width: 200px;
+  height: 20px;
+  background: rgba(255,255,255,.4);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left 10%, left bottom, from(rgba(0,0,0,.5)), to(rgba(0,0,0,0)));
+}
