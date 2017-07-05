@@ -1,6 +1,7 @@
 import {Component, OnInit, Input, HostListener, Inject} from '@angular/core';
 import { NameListService } from '../shared/name-list/name-list.service';
 import { DOCUMENT } from '@angular/platform-browser';
+import {ScrollService} from "../shared/scroll-service/scroll.service";
 /**
  * This class represents the lazy loaded HomeComponent.
  */
@@ -9,6 +10,7 @@ import { DOCUMENT } from '@angular/platform-browser';
   selector: 'sd-home',
   templateUrl: 'home.component.html',
   styleUrls: ['home.component.css'],
+  providers: [ScrollService],
   inputs: [],
   outputs: [],
 
@@ -25,13 +27,19 @@ export class HomeComponent implements OnInit {
    *
    * @param {NameListService} nameListService - The injected NameListService.
    */
-  constructor(@Inject(DOCUMENT) private document: Document, public nameListService: NameListService) {}
+  constructor(@Inject(DOCUMENT) private document: Document, public nameListService: NameListService,
+               public ScrollService : ScrollService) {
+
+    //console.log(ScrollService.navIsFixedHome)
+  }
 
   /**
    * Get the names OnInit
    */
   ngOnInit() {
     this.getNames();
+    this.ScrollService.onWindowScroll();
+
   }
 
   /**
@@ -60,13 +68,9 @@ export class HomeComponent implements OnInit {
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    let number = this.document.body.scrollTop;
-    console.log(number, this.navIsFixedHome);
-    if (number > 180) {
-      this.navIsFixedHome = true;
-    } else if (this.navIsFixedHome && number < 180) {
-      this.navIsFixedHome = false;
-    }
+    this.navIsFixedHome = this.ScrollService.onWindowScroll();
   }
+
+
 
 }
