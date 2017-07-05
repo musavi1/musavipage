@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, OnInit } from "@angular/core";
+import { Component, HostListener, Inject, OnInit, Output } from "@angular/core";
 import { DOCUMENT } from '@angular/platform-browser';
 
 /**
@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit{
   @HostListener("window:scroll", [])
   onWindowScroll() {
     let number = this.document.body.scrollTop;
-    console.log(number);
+    //console.log(number);
     if (number > 180) {
       this.navIsFixed = true;
     } else if (this.navIsFixed && number < 180) {

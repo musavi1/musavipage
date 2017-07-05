@@ -9,7 +9,7 @@ import { DOCUMENT } from '@angular/platform-browser';
   selector: 'sd-home',
   templateUrl: 'home.component.html',
   styleUrls: ['home.component.css'],
-  inputs: ['navIsFixed'],
+  inputs: [],
   outputs: [],
 
 })
@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit {
   @HostListener("window:scroll", [])
   onWindowScroll() {
     let number = this.document.body.scrollTop;
-    console.log(number);
+    console.log(number, this.navIsFixedHome);
     if (number > 180) {
       this.navIsFixedHome = true;
     } else if (this.navIsFixedHome && number < 180) {
