@@ -1,6 +1,5 @@
 import {Component, Inject, HostListener} from '@angular/core';
 import {ScrollService} from "../shared/scroll-service/scroll.service";
-import {DOCUMENT} from "@angular/platform-browser";
 
 /**
  * This class represents the lazy loaded AboutComponent.
