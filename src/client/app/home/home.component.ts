@@ -38,7 +38,6 @@ export class HomeComponent implements OnInit {
    */
   ngOnInit() {
     this.getNames();
-    this.ScrollService.onWindowScroll();
 
   }
 
