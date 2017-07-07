@@ -1,4 +1,4 @@
-import {Component, Inject, HostListener} from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {ScrollService} from "../shared/scroll-service/scroll.service";
 
 /**
@@ -18,6 +18,7 @@ export class SkillsComponent {
   }
 
   public navIsFixedSkills: boolean = false;
+  public cssVar = 90+'deg';
 
   @HostListener("window:scroll", [])
   onWindowScroll() {

@@ -13,7 +13,7 @@ export class ScrollService{
 
   onWindowScroll() {
     let number = this.document.body.scrollTop;
-    console.log(number, this.navIsFixedHome);
+    //console.log(number, this.navIsFixedHome);
     if (number > 180) {
       this.navIsFixedHome = true;
     } else if (this.navIsFixedHome && number < 180) {

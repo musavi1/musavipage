@@ -8,4 +8,7 @@ import { SkillsRoutingModule } from './skills-routing.module';
   declarations: [SkillsComponent],
   exports: [SkillsComponent]
 })
-export class SkillsModule { }
+export class SkillsModule {
+
+
+}
