@@ -1,6 +1,7 @@
 :host {
-  display: flex;
-  background: rgba(0,0,0,.1);
+  width: 100%;
+  display: block;
+  background: rgba(0,0,0,1);
   z-index: -105;
 }
 
@@ -15,6 +16,7 @@ ul {
 
 .main{
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0px;
 }
 
@@ -109,7 +111,7 @@ ul {
 
 .volunteer-background{
   /*background: url("assets/images/r-d-black.png") fixed no-repeat ;*/
-  background: url("assets/images/left-blank.png") fixed no-repeat ;
+  background: url("assets/images/left-blank.png") fixed repeat ;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -117,7 +119,7 @@ ul {
   background-size: cover;
   background-color: rgb(254, 188, 17);
   width: 100%;
-  height: 36em;
+  height: 100%;
   min-height: 34em;
 }
 
@@ -387,6 +389,7 @@ to prevent jumping in page scrolling. */
   margin: 10px auto;
   height: 400px;
   width: 550px;
+  max-width: 550px;
   z-index: 1;
 }
 
@@ -405,6 +408,7 @@ to prevent jumping in page scrolling. */
   margin: 10px auto;
   height: 400px;
   width: 550px;
+  max-width: 550px;
   z-index: 1;
 }
 
@@ -443,9 +447,12 @@ to prevent jumping in page scrolling. */
 
 .main-volunteer{
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 70%;
   height: 65em;
   min-height: 35em;
+  max-height: 35em;
+  max-width: 800px;
 
 }
 
@@ -459,6 +466,7 @@ to prevent jumping in page scrolling. */
   font-size: 26px;
   height: 400px;
   width: 550px;
+  max-width: 550px;
   border: 10px rgba(254, 188, 17, 0.8) double;
 
 }
