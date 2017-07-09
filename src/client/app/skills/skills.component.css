@@ -1,3 +1,19 @@
+:host {
+  width: 100%;
+  display: block;
+  background: rgba(0,0,0,1);
+  z-index: -105;
+
+}
+
+.grid-item {
+  flex-grow: 1;
+  min-width: 25%;
+  width: 100%;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
 
 /*<>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .main{
@@ -6,9 +22,12 @@
   display: flex;
   margin-top: 0px;
   background: rgba(25, 25, 25, 1);
+  flex-wrap: wrap;
+
 }
 
 .class-text-center{
+  display: flex;
   text-align: center;
   -webkit-flex: 100%;
   -ms-flex: 100%;
@@ -28,7 +47,7 @@
   box-shadow: 0 19px 38px rgba(0,0,0,0.90), 0 15px 12px rgba(0,0,0,0.22);
   min-height: 20em;
   max-height: 20em;
-  overflow: scroll;
+  overflow-y: scroll;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -50,33 +69,35 @@
 }
 
 .skills-text-block{
+  display: flex;
   padding: .2em .5em 1em .2em;
   width: 100%;
-  height: 213px;
   font-size: 20px;
   font-weight: 400;
-  overflow: scroll;
+  overflow-y: scroll;
   color: white;
 }
 .background-main{
   background: rgba(0,0,0,1);
 }
 .skills-class{
-  -webkit-flex: 25%;
-  -ms-flex: 25%;
-  flex: 100%;
+  /*-webkit-flex: 25%;
+  -ms-flex: 25%;*/
+  flex-wrap: wrap;
   color: rgba(255, 255, 255, 1);
   border-radius: 2%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  align-items: center;
   padding: 4px;
-  background: rgba(254, 188, 17, 1);
+  /*background: rgba(254, 188, 17, 1);*/
   background: rgba(0, 0, 0, 1);
   margin: 2em;
   border: double 5px #ffffff;
   min-height: 25em;
   max-height: 25em;
+  overflow-y: scroll;
   box-shadow: 8px 4px 12px 3px rgba(255,255,255, .6);
 }
 .skills-imgs{
@@ -168,7 +189,8 @@ div.rotate-left-4 {
 
 
 
-.skill-class-text{
+.skills-class-text{
+  display: flex;
   color: #ffffff ;
   margin-top: 0px;
   background: rgba(0,0,0,1);
@@ -207,15 +229,6 @@ div.rotate-left-4 {
 
 }
 
-
-
-.skills-class:hover{
-
-}
-
-.skill-body{
-
-}
 
 /*This padding adds when the navbar would change to fix
 to prevent jumping in page scrolling. */
