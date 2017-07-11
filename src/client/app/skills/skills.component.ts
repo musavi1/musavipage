@@ -18,10 +18,10 @@ export class SkillsComponent {
   }
 
   public navIsFixedSkills: boolean = false;
-  public cssVar = 90+'deg';
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
     this.navIsFixedSkills = this.ScrollService.onWindowScroll();
+    console.log(this.navIsFixedSkills);
   }
 }
