@@ -52,19 +52,7 @@ export class HomeComponent implements OnInit {
       );
   }
 
-  /*just added for git testing*
-  from new computer
 
-  2
-  3
-  4
-
-  6
-  7
-
-  0
-
-   */
 
   /**
    * Pushes a new name onto the names array
@@ -84,13 +72,6 @@ export class HomeComponent implements OnInit {
     this.navIsFixedHome = this.ScrollService.onWindowScroll();
   }
 
-  /*just added for git testing*
-   from old computer in second place
-   1
-   2
-   3
-   4
-   5
-   */
+
 
 }
