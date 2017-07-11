@@ -52,6 +52,13 @@ export class HomeComponent implements OnInit {
       );
   }
 
+  /*just added for git testing*
+  from new
+  skjdfksj
+  sdkjsd
+  k/
+   */
+
   /**
    * Pushes a new name onto the names array
    * @return {boolean} false to prevent default form submit behavior to refresh the page.
