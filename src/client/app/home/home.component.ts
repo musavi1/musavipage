@@ -54,14 +54,13 @@ export class HomeComponent implements OnInit {
 
   /*just added for git testing*
   from new computer
-  
+
   2
   3
   4
-  5
+
   6
   7
-  8
 
   0
 
