@@ -53,10 +53,8 @@ export class HomeComponent implements OnInit {
   }
 
   /*just added for git testing*
-  from new
-  skjdfksj
-  sdkjsd
-  k/
+  from old computer
+  1234567
    */
 
   /**
@@ -77,6 +75,13 @@ export class HomeComponent implements OnInit {
     this.navIsFixedHome = this.ScrollService.onWindowScroll();
   }
 
-
+  /*just added for git testing*
+   from old computer in second place
+   1
+   2
+   3
+   4
+   5
+   */
 
 }
