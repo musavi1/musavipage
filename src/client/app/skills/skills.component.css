@@ -85,7 +85,7 @@
 
 }
 
-.element-div:hover{
+.element-div:hover {
   display: inline-flex;
   flex-wrap: wrap;
   position: relative;
@@ -99,11 +99,14 @@
   transition-duration: 900ms;
   transform: rotate(0deg);
   transform: scale(1.1);
-
-
-
-
 }
+
+.backW{
+  color: white;
+  background: blue;
+}
+
+
 
 .skills-main{
   z-index: 3;
