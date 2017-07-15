@@ -1,5 +1,5 @@
 
-import {Injectable, HostListener, Inject} from "@angular/core";
+import {Injectable, Inject} from "@angular/core";
 import { DOCUMENT } from '@angular/platform-browser';
 
 
@@ -13,7 +13,6 @@ export class ScrollService{
 
   onWindowScroll() {
     let number = this.document.body.scrollTop;
-    //console.log(number, this.navIsFixedHome);
     if (number > 180) {
       this.navIsFixedHome = true;
     } else if (this.navIsFixedHome && number < 180) {

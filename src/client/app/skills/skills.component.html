@@ -1,12 +1,5 @@
 <div [class.affix]="navIsFixedSkills" class="background-main">
 
-  <!--<ul class="backW">
-    <li *ngFor="let ski of _skillData" >
-      {{ski.image}}
-
-    </li>
-  </ul>-->
-
   <!--Header-->
   <div class="main">
      <div class="skills-class-text class-text-center">
@@ -15,12 +8,7 @@
   </div>
 
   <div class="grid-item">
-
-
-<!--
-    Self Driving cars
--->
-    <div class="skills-class skills-thirty " *ngFor="let skill of _skillData">
+    <div class="skills-class skills-thirty " *ngFor="let skill of _skillData" >
       <div>
         <img src={{skill.image}} class="skills-imgs">
         <div class="skills-text-block">
@@ -28,9 +16,6 @@
         </div>
       </div>
     </div>
-
-</div>
-
-
+  </div>
 
 </div>

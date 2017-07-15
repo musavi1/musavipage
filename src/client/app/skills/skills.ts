@@ -1,4 +1,4 @@
 export interface SkillsData {
-  images: string;
-  texts: string;
+  image: string;
+  text: string;
 }

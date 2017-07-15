@@ -5,6 +5,10 @@
   padding: 0px 0px;
 }
 
+.cssNone{
+  display: none;
+}
+
 h1 {
   display: block;
   font-size: 20px;
