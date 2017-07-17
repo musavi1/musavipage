@@ -16,9 +16,14 @@ import {Observable} from "rxjs";
   providers: [ScrollService, SkillsdataServices],
   animations: [
     trigger('myTrigger', [
-      state('normal', style({transform: 'scale(1)'})),
-      state('zoom', style({transform:'scale(1.4'})),
-      transition('normal <=> zoom', animate('500ms'))
+      transition('normal <=> zoom', animate(400, keyframes([
+        style({transform: 'translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -1deg)', offset: .15}),
+        style({transform: 'translate3d(20%, 0, 0) rotate3d(0, 0, 1, 1deg)', offset: .30}),
+        style({transform: 'translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -1deg)', offset: .45}),
+        style({transform: 'translate3d(10%, 0, 0) rotate3d(0, 0, 1, 1deg)', offset: .60}),
+        style({transform: 'translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)', offset: .75}),
+        style({transform: 'none', offset: 1}),
+      ]))),
     ])
   ]
 })
@@ -51,7 +56,9 @@ export class SkillsComponent {
   }
 
   toggleState(){
+    console.log('button pressed');
     this.state = (this.state === 'normal' ? 'zoom' : 'normal')
   }
+
 
 }
