@@ -1,47 +1,62 @@
 [{"image":"assets/images/SelfdrivingCars.jpg",
-    "text":"Studied and completed several projects in Artificial Intelligence under supervision and direction of professor Sebastian Thrun in Georgia Institute of Technology. Some projects included python cod to predict robot’s behavior such as Google Self driving cars based on the data receive from vireos sensors."
+    "text":"Studied and completed several projects in Artificial Intelligence under supervision and direction of professor Sebastian Thrun in Georgia Institute of Technology. Some projects included python cod to predict robot’s behavior such as Google Self driving cars based on the data receive from vireos sensors.",
+  "state":"normal"
   },
   {"image":"assets/images/FrontEnd.jpg",
-    "text":"Experienced to design and publish several responsive websites with eCommerce and Web Services for enterprise organizations such as Cox, AT&T  and small businesses. Expert on frameworks such as WordPress, Bootstrap, Foundation and libraries such as jQueryi UI and Angular 2."
+    "text":"Experienced to design and publish several responsive websites with eCommerce and Web Services for enterprise organizations such as Cox, AT&T  and small businesses. Expert on frameworks such as WordPress, Bootstrap, Foundation and libraries such as jQueryi UI and Angular 2.",
+    "state":"normal"
   },
   {"image":"assets/images/Security.jpg",
-    "text":"Information Security skills such as Business Continuity Plan, Malware Analysis, Software Security, Vulnerability assessment, Penetration Testing, Data Encryption, Network Security, Change Control, Firewall and IDS."
+    "text":"Information Security skills such as Business Continuity Plan, Malware Analysis, Software Security, Vulnerability assessment, Penetration Testing, Data Encryption, Network Security, Change Control, Firewall and IDS.",
+    "state":"normal"
   },
   {"image":"assets/images/Java.jpg",
-    "text":"          Build or enhanced several projects for Department of Human Services, Accenture, Cox and AT&T in Java and C#. Implemented services such as AngularJS, Spring and Web Services to provide the best experience for the users."
+    "text":"          Build or enhanced several projects for Department of Human Services, Accenture, Cox and AT&T in Java and C#. Implemented services such as AngularJS, Spring and Web Services to provide the best experience for the users.",
+    "state":"normal"
   },
 
   {"image":"assets/images/MobileAppDev.jpg",
-    "text":"Created several Mobile Application for Mobile Application Development Center of Kennesaw State University. One of the mobile application we created widely used in Coles College of Business."
+    "text":"Created several Mobile Application for Mobile Application Development Center of Kennesaw State University. One of the mobile application we created widely used in Coles College of Business.",
+    "state":"normal"
   },
   {"image":"assets/images/Firewall.jpg",
-    "text":"Experience with configuring firewall for enterprise routers and firewalls. Setup and configure IDS and maximize their potential for network protection."
+    "text":"Experience with configuring firewall for enterprise routers and firewalls. Setup and configure IDS and maximize their potential for network protection.",
+    "state":"normal"
   },
   {"image":"assets/images/Networking.jpg",
-    "text":"Experience with network protection and best practices of network design. Coded a program in python to protect the network from DDos Attack. Designed a python code to re route the network based on the amount of activity in each node. Capable to code a firewall with the customized rules base on the organizations policy."
+    "text":"Experience with network protection and best practices of network design. Coded a program in python to protect the network from DDos Attack. Designed a python code to re route the network based on the amount of activity in each node. Capable to code a firewall with the customized rules base on the organizations policy.",
+    "state":"normal"
   },
   {"image":"assets/images/Malware.jpg",
-    "text":"Experience to to run Malware, Ransomware, Adware, rootkits Spyware or Viruses in a protected sandbox and monitor their behaviors."
+    "text":"Experience to to run Malware, Ransomware, Adware, rootkits Spyware or Viruses in a protected sandbox andmonitor their behaviors." ,
+    "state":"normal"
   },
   {"image":"assets/images/WebSecurity.jpg",
-    "text":" Familiar with best practices of OWASP and implementation of OWASP top 10 to ensure secure and enhancedwebsites. Expert on web designing with high security standards."
+    "text":" Familiar with best practices of OWASP and implementation of OWASP top 10 to ensure secure and enhancedwebsites. Expert on web designing with high security standards.",
+    "state":"normal"
   },
   {"image":"assets/images/Ruby.jpg",
-    "text":" Ruby is one of the great tools that I used for scripting programing. I have hands-on experience how to protect a network from attacks such as DDos with Ruby script."
+    "text":" Ruby is one of the great tools that I used for scripting programing. I have hands-on experience how to protect a network from attacks such as DDos with Ruby script.",
+    "state":"normal"
   },
   {"image":"assets/images/Php.jpg",
-    "text":"PHP was part of a project that I completed to create an online Newspaper for a client. PHP used to communicate with SQL server with professional security enhancement."
+    "text":"PHP was part of a project that I completed to create an online Newspaper for a client. PHP used to communicate with SQL server with professional security enhancement.",
+    "state":"normal"
   },
   {"image":"assets/images/PythonImg.jpg",
-    "text":" Python was the main language used during Master degree in Georgia Tech. Used Python scripting to solve complex task by using Python\"s libraries such as NumPy."
+    "text":" Python was the main language used during Master degree in Georgia Tech. Used Python scripting to solve complex task by using Python\"s libraries such as NumPy.",
+    "state":"normal"
   },
   {"image":"assets/images/JavaScript.jpg",
-    "text":"Knowledgeable about Typescript and Javascript and their libraries such as JQuery, JQuery UI and Angular 2"
+    "text":"Knowledgeable about Typescript and Javascript and their libraries such as JQuery, JQuery UI and Angular 2",
+    "state":"normal"
   },
   {"image":"assets/images/amazon_web_services.jpg",
-    "text":"Trained and experienced with AWS web services, such as Redshift, DinamoDB and RDS. Hands-on experienced with Server-less Cloud Computing such as Lambda in AWS."
+    "text":"Trained and experienced with AWS web services, such as Redshift, DinamoDB and RDS. Hands-on experienced with Server-less Cloud Computing such as Lambda in AWS.",
+    "state":"normal"
   },
   {"image":"assets/images/Photography.jpg",
-    "text":"Knowledgeable about working with binary format of images. Completed several codes in Python to generate Panorama, Face Detection, Smoothing, blending and filtering the images. Generate cod to manipulate digital images."
+    "text":"Knowledgeable about working with binary format of images. Completed several codes in Python to generate Panorama, Face Detection, Smoothing, blending and filtering the images. Generate cod to manipulate digital images.",
+    "state":"normal"
   }
 ]

@@ -33,7 +33,6 @@ export class SkillsComponent {
   public navIsFixedSkills: boolean = false;
   //public skills: Observable<SkillsData[]> ;
   public skills: Observable<any[]>;
-  state: string = 'normal';
 
 
 
@@ -55,9 +54,11 @@ export class SkillsComponent {
       .subscribe(data => this._skillData = data)
   }
 
-  toggleState(){
+  toggleState(skill: SkillsData){
     console.log('button pressed');
-    this.state = (this.state === 'normal' ? 'zoom' : 'normal')
+
+    skill.state= (skill.state == 'normal' ? 'zoom' : 'normal')
+    console.log(skill.state);
   }
 
 

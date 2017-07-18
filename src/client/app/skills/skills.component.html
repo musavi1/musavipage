@@ -7,7 +7,8 @@
      </div>
   </div>
   <div class="grid-item">
-    <div class="skills-class skills-thirty " *ngFor="let skill of _skillData"  [@myTrigger]='state' (click)="toggleState()">
+    <div class="skills-class skills-thirty " *ngFor="let skill of _skillData; let i = index"  [@myTrigger]='skill.state'
+         (click)="toggleState(skill)">
       <div>
         <img src={{skill.image}} class="skills-imgs">
         <div class="skills-text-block">
