@@ -21,9 +21,10 @@
 
 /*<>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .main{
-  display: -webkit-flex;
+  /*display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: flex;*/
+  display: block;
   margin-top: 0px;
   background: rgba(255, 255, 255, 1);
   flex-wrap: wrap;
@@ -109,10 +110,7 @@
 
 
 .skills-main{
-  z-index: 3;
-  -webkit-flex: 100%;
-  -ms-flex: 100%;
-  flex: 100%;
+  font-family: Nosifer;
 }
 
 

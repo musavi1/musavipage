@@ -7,17 +7,39 @@ input {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: circle  ;
   padding: 0 0 0 8px;
+}
+
+h2{
+  color: rgb(254, 188, 17);
+  /*
+  font-family: 'Sofia', serif;
+  */
+  font-family: 'Akronim', serif;
+  font-size: 22px;
+  font-style: oblique;
+}
+
+h2 ~ h4 {
+  color: #777;
+}
+
+ .indent {
+  margin-left: 200px;
 }
 
 /*<>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .main{
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+
+  display: block;
   margin-top: 0px;
-  background: rgba(25, 25, 25, 1);
+  background: rgba(255, 255, 255, .4);
+
+}
+
+.main-body-div{
+  padding: 10px 30px 10px 30px;
 }
 
 .class-text-center{
@@ -53,6 +75,7 @@ ul {
   -webkit-flex: 100%;
   -ms-flex: 100%;
   flex: 100%;
+  font-family: Nosifer;
 }
 
 .skills-class{

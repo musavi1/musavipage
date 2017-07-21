@@ -16,10 +16,10 @@ export class AboutComponent {
   constructor( public ScrollService: ScrollService) {
   }
 
-  public navIsFixedSkills: boolean = false;
+  public navIsFixedAbout: boolean = false;
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    this.navIsFixedSkills = this.ScrollService.onWindowScroll();
+    this.navIsFixedAbout = this.ScrollService.onWindowScroll();
   }
 }

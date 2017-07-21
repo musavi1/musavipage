@@ -23,6 +23,7 @@ ul {
 .skills-main{
   z-index: 3;
   flex: 100%;
+  font-family: Nosifer;
 }
 
 .education-main{
