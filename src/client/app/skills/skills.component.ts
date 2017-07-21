@@ -55,10 +55,10 @@ export class SkillsComponent {
   }
 
   toggleState(skill: SkillsData){
-    console.log('button pressed');
+    //console.log('button pressed');
 
     skill.state= (skill.state == 'normal' ? 'zoom' : 'normal')
-    console.log(skill.state);
+    //console.log(skill.state);
   }
 
 

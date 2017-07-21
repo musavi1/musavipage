@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Config } from './shared/config/env.config';
+//import { Config } from './shared/config/env.config';
 import './operators';
 
 /**
@@ -13,6 +13,6 @@ import './operators';
 })
 export class AppComponent {
   constructor() {
-    console.log('Environment config', Config);
+    //console.log('Environment config', Config);
   }
 }
