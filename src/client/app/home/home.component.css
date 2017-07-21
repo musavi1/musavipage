@@ -23,6 +23,10 @@ ul {
 .skills-main{
   z-index: 3;
   flex: 100%;
+
+}
+
+.font-nosifer{
   font-family: Nosifer;
 }
 

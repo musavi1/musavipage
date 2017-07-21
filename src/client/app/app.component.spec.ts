@@ -47,7 +47,6 @@ export function main() {
           .then(() => {
             let fixture = TestBed.createComponent(TestComponent);
             let compiled = fixture.nativeElement;
-
             expect(compiled).toBeTruthy();
           });
       }));
