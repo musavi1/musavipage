@@ -48,6 +48,21 @@ h4{
 
 }
 
+.print-button{
+  color: black;
+  background-color: #ffe66d;
+  float: right;
+  rborder: 0px solid black!important;
+  border-radius: 25px;
+
+}
+
+/*
+Remove unwanted border aournd buttn.
+*/
+button::-moz-focus-inner { border: 0; }
+button:focus {outline:0;}
+
 /*<>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .main{
 
