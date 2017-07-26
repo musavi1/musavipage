@@ -24,7 +24,7 @@ export class AboutComponent {
   }
 
   printThisPage(){
-    window.open('assets/data/resume1705.pdf');
+    window.open('assets/data/Resume1705.pdf');
 
   }
 }
