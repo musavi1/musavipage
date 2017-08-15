@@ -20,6 +20,8 @@ export class HomeComponent implements OnInit {
   newName: string = '';
   errorMessage: string;
   names: any[] = [];
+  public navIsFixedHome: boolean = false;
+  public number : number = 0;
 
   /**
    * Creates an instance of the HomeComponent with the injected
@@ -65,11 +67,17 @@ export class HomeComponent implements OnInit {
     return false;
   }
 
-  public navIsFixedHome: boolean = false;
+
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    this.navIsFixedHome = this.ScrollService.onWindowScroll();
+    this.number = this.ScrollService.onWindowScroll();
+    console.log(this.number);
+    if (this.number > 180){
+      this.navIsFixedHome = true;
+    }else{
+      this.navIsFixedHome = false;
+    }
   }
 
 

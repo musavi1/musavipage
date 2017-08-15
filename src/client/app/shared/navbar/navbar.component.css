@@ -5,18 +5,38 @@
 
 
 nav{
+
   height: 60px;
-  padding-left: 50px;
+  /*
   border: 2px solid #b88800;
+  */
   background: rgb(254, 188, 17);
   border-bottom-width: 1px;
   display: flex;
-  margin-top: 180px;
+  display:-webkit-flex;
+  margin: 180px auto 0 auto;
   width: 100%;
-  box-shadow: 9px 9px 38px rgba(255,255,255,0.90), 5px 5px 12px rgba(255,255,255,0.22);
+
+  border-bottom-width: 1px;
+  display: flex;
+  display:-webkit-flex;
+  top: 0px;
+  color: #282828;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.bg-nav{
+  width: 100%;
+
 }
 
 nav a {
+  display: inline-flex;
+  display: -webkit-inline-flex;
   color: #282828;
   font-size: 16px;
   font-weight: 500;
@@ -26,6 +46,9 @@ nav a {
   vertical-align: middle;
   cursor: pointer;
 }
+
+nav >div > a:first-child {
+  padding-left: 50px; }
 
 nav a.router-link-active {
   color: #ffe66d;
@@ -51,6 +74,7 @@ nav a:hover{
   background: #febc11;
   border-bottom-width: 1px;
   display: flex;
+  display:-webkit-flex;
   height: 60px;
   top: 0px;
   color: #282828;

@@ -12,6 +12,7 @@ import {ScrollService} from "../shared/scroll-service/scroll.service";
   providers: [ScrollService]
 })
 export class AboutComponent {
+  private number: number =0;
 
   constructor( public ScrollService: ScrollService) {
   }
@@ -20,7 +21,12 @@ export class AboutComponent {
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    this.navIsFixedAbout = this.ScrollService.onWindowScroll();
+    this.number = this.ScrollService.onWindowScroll();
+    if (this.number > 180){
+      this.navIsFixedAbout = true;
+    }else{
+      this.navIsFixedAbout = false;
+    }
   }
 
   printThisPage(){

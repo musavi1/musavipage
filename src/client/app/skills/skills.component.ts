@@ -33,6 +33,7 @@ export class SkillsComponent {
   public navIsFixedSkills: boolean = false;
   //public skills: Observable<SkillsData[]> ;
   public skills: Observable<any[]>;
+  private number : number = 0;
 
 
 
@@ -46,7 +47,12 @@ export class SkillsComponent {
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    this.navIsFixedSkills = this.ScrollService.onWindowScroll();
+    this.number = this.ScrollService.onWindowScroll();
+    if (this.number>180){
+      this.navIsFixedSkills = true;
+    }else{
+      this.navIsFixedSkills = false;
+    }
   }
 
   getSkills() {

@@ -3,6 +3,7 @@
   color: rgba(255, 255, 255, 0.7);
   height: 180px;
   padding: 0px 0px;
+  z-index: -5;
 }
 
 .cssNone{
@@ -63,7 +64,8 @@ img.round-image:hover{
 }
 .name-center{
   position: relative;
-  display: block;
+  display: flex;
+  display: -webkit-flex;
   margin-top: 135px ;
   margin-left: 43%;
 

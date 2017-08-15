@@ -18,6 +18,6 @@ export class ScrollService{
     } else if (this.navIsFixedHome && number < 180) {
       this.navIsFixedHome = false;
     }
-    return this.navIsFixedHome;
+    return number;
   }
 }
