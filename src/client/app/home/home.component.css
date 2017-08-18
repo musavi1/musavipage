@@ -5,6 +5,8 @@
   display: flex;
   background: rgba(0,0,0,.1);
   z-index: -105;
+  flex-direction: column;
+
 }
 
 input {
@@ -17,6 +19,7 @@ ul {
 }
 
 .main-body{
+  width: 100%;
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,10 +28,48 @@ ul {
   margin-top: 0px;
 }
 
+.module-block{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0px;
+  background: rgba(255, 255, 255, 1);
+  flex-wrap: wrap;
+  line-height: 3em;
+  width: 100%;
+}
+
+.module-block-education{
+  background: url("assets/images/gradHat2.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0px;
+  flex-wrap: wrap;
+  line-height: 3em;
+  width: 100%;
+  z-index: 100;
+  flex: 100%;
+  padding: 0 0 40px 0;
+}
+
 .skills-main{
   z-index: 3;
   flex: 100%;
 
+}
+
+.margin-end-education{
+  padding: 0 0 20px 0;
+}
+
+.skills-items{
+  flex: 30%;
+  flex-wrap: wrap;
 }
 
 .font-nosifer{
@@ -37,6 +78,7 @@ ul {
 
 .education-main{
   z-index: -3;
+  flex: 100%;
 }
 
 .volunteer-main{
@@ -239,12 +281,14 @@ to prevent jumping in page scrolling. */
   padding-left: 2em;
 }
 .trans-background{
-  background: url("assets/images/gradHat2.jpeg") fixed repeat;
-  background-position: center center;
-  background-color: rgba(0,0,0,.2);
+  background: url("assets/images/gradHat2.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
   z-index: -1;
   opacity: 1;
-  min-height: 20em;
+  min-height: 100%
 }
 
 
@@ -404,7 +448,7 @@ to prevent jumping in page scrolling. */
   position: relative;
   margin: 10px auto;
   height: 400px;
-  width: 550px;
+  width: 100%;
   max-width: 550px;
   z-index: 1;
 }
@@ -423,7 +467,7 @@ to prevent jumping in page scrolling. */
   position: relative;
   margin: 10px auto;
   height: 400px;
-  width: 550px;
+  width: 100%;
   max-width: 550px;
   z-index: 1;
 }
@@ -459,6 +503,12 @@ to prevent jumping in page scrolling. */
 
 }
 
+@media (max-width: 600px) {
+  .hide-small{
+    display: none;
+  }
+}
+
 /*////*/
 
 .main-volunteer{
@@ -467,7 +517,7 @@ to prevent jumping in page scrolling. */
   display: -ms-flexbox;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 70%;
+  width: 50%;
   height: 65em;
   min-height: 35em;
   max-height: 35em;

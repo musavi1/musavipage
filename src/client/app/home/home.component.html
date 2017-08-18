@@ -1,16 +1,19 @@
 
-<div [class.affix]="navIsFixedHome">
+<div [class.affix]="navIsFixedHome" class="main-body">
 
   <div class="background-video">
     <video loop muted autoplay poster="" class="background-vid">
       <source src="assets/images/cyberbg.webm" type="video/webm">
     </video>
   </div>
-    <div>
-      <div class=" main-body skills-main font-nosifer">
+    <div class="module-block">
+      <!-- skills -->
+      <div class="  skills-main">
         <h1 class="skills-class-text class-text-center "> AREA OF EXPERTISE</h1>
       </div>
-      <div class="main-body">
+
+      <div class="skills-main">
+        <!--First Skill-->
         <div class="skills-class ">
           <h2>
             FRONT-END DEVELOPER
@@ -23,6 +26,7 @@
             </span>
           </div>
         </div>
+        <!--Second Skill-->
         <div class="skills-class ">
           <h2>
             BACK-END DEVELOPER
@@ -34,6 +38,7 @@
             </span>
           </div>
         </div>
+        <!--Third Skill-->
         <div class="skills-class ">
           <h2>
             INFORMATION SECURITY
@@ -45,9 +50,11 @@
         </div>
       </div>
     </div>
-    <div >
-      <div class="trans-background">
-        <div class="main-body education-main font-nosifer">
+<!--
+    Education
+-->
+    <div class="module-block-education ">
+        <div class="main-body education-main">
           <h1 class="class-text-center education-class-text zero-top-margin"> EDUCATION</h1>
         </div>
         <div class="main-body education-main">
@@ -74,22 +81,21 @@
             </div>
           </div>
           <div class="dividerHor"></div>
-          <div class="ten">
+          <div class="ten margin-end-education">
             <img class="education-class" src="assets/images/ksuLogoSq.jpg" alt="GATech Pic">
           </div>
         </div>
-        <div class="dividerVer"></div>
-        <div class="dividerVer"></div>
-        <div class="dividerVer"></div>
-        <div class="dividerVer"></div>
-      </div>
+
     </div>
 
-
-    <div class="volunteer-background">
+<!--
+    Volunteer Section
+-->
+    <div class="volunteer-background hide-small">
       <div class="main-body education-main font-nosifer">
         <h1 class="class-text-center education-class-text zero-top-margin">VOLUNTEER</h1>
       </div>
+
       <div class="main-body education-main ">
         <div id="f1_container" >
           <div id="f1_card" class="shadow fifty">
@@ -124,6 +130,8 @@
 
     </div>
   </div>
+
+
   <!--<div class="trans-background">
         <p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
 

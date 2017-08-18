@@ -21,16 +21,7 @@ export class NavbarComponent implements OnInit{
 
   ngOnInit() { }
 
-  /*@HostListener("window:scroll", [])
-  onWindowScroll() {
-    let number = this.document.body.scrollTop;
-    //console.log(number);
-    if (number > 180) {
-      this.navIsFixed = true;
-    } else if (this.navIsFixed && number < 180) {
-      this.navIsFixed = false;
-    }
-  }*/
+
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
