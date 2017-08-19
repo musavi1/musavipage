@@ -37,9 +37,7 @@ h1 {
   margin-left: 400px;
 }
 .round-image{
-  margin-left: 100px;
-  display:block;
-  margin-left: 45% ;
+  display:flex;
   border-radius: 50px;
   height: 155px;
   position: fixed;
@@ -47,11 +45,12 @@ h1 {
   -moz-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
+  align-items: center;
+  justify-content: center;
 }
 
 img.round-image:hover{
   position: absolute;
-  margin-left: 45%;
   border-radius: 50px;
   width: 75px;
   height: 75px;
@@ -61,12 +60,21 @@ img.round-image:hover{
   transition: all 2s ease-in-out;
 
 
+
 }
 .name-center{
   position: relative;
   display: flex;
   display: -webkit-flex;
   margin-top: 135px ;
-  margin-left: 43%;
+  align-items: center;
+  justify-content: center;
 
+}
+
+.block-class{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0 -80px 0 ;
 }
