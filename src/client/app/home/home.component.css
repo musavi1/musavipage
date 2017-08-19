@@ -33,7 +33,6 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin-top: 0px;
-  background: rgba(255, 255, 255, 1);
   flex-wrap: wrap;
   line-height: 3em;
   width: 100%;
@@ -43,7 +42,6 @@ ul {
   background: url("assets/images/gradHat2.jpeg");
   background-attachment: fixed;
   background-position: center;
-  background-repeat: repeat;
   background-size: cover;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -59,8 +57,51 @@ ul {
 
 .skills-main{
   z-index: 3;
-  flex: 100%;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
 
+}
+
+@media (min-width: 736px){
+  .skills-class{
+    flex: 30%;
+    color: white;
+    border-radius: 2%;
+    align-self: center;
+    padding: 1em;
+    background: #febc11;
+    margin: 1em;
+    border: solid 1px #ffffff;
+
+  }
+}
+
+
+@media (max-width: 735px){
+  .skills-main{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 2%;
+    align-self: center;
+    padding: 1em;
+    background: #febc11;
+    margin: 1em 0 5em 0;
+    border: solid 1px #ffffff;
+  }
+
+  .skills-class{
+    padding: 20px 0;
+  }
+}
+
+
+
+.skills-main-full{
+  z-index: 3;
+  display: flex;
+  flex: 100%
 }
 
 .margin-end-education{
@@ -175,17 +216,7 @@ ul {
   min-height: 34em;
 }
 
-.skills-class{
-  flex: 30%;
-  color: white;
-  border-radius: 2%;
-  align-self: center;
-  padding: 1em;
-  background: #febc11;
-  margin: 1em;
-  border: solid 1px #ffffff;
 
-}
 
 .skills-class h2{
   background: rgba(0,0,0,.9);
@@ -508,6 +539,7 @@ to prevent jumping in page scrolling. */
     display: none;
   }
 }
+
 
 /*////*/
 
