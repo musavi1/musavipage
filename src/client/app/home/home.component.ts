@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit {
   @HostListener("window:scroll", [])
   onWindowScroll() {
     this.number = this.ScrollService.onWindowScroll();
-    console.log(this.number);
+    //console.log(this.number);
     if (this.number > 180){
       this.navIsFixedHome = true;
     }else{

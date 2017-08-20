@@ -4,6 +4,7 @@
   height: 180px;
   padding: 0px 0px;
   z-index: -5;
+
 }
 
 .cssNone{
@@ -37,10 +38,15 @@ h1 {
   margin-left: 400px;
 }
 .round-image{
-  display:flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 50px;
-  height: 155px;
+  height: 10em;
+  /*
   position: fixed;
+  */
+  margin-top: -80px;
   -webkit-transition: all 2s ease-in-out; ;
   -moz-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
@@ -58,23 +64,26 @@ img.round-image:hover{
   -moz-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
-
-
-
 }
+
 .name-center{
   position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
-  margin-top: 135px ;
+  margin-top: 60px ;
   align-items: center;
   justify-content: center;
 
 }
 
 .block-class{
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 80px 0 -80px 0 ;
 }
+
